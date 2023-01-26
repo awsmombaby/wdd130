@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    background-color: hotpink;
+}
+img {
+    width: 15%;
+}
+h1 {
+    color: white;
+}
+h1:hover {
+    color: black;
+}
+header p {
+    font-size: 5%;
+    color: white;
+    width: 48%;
+    margin: 10px auto;
+}
+header h4 {
+    color: white;
+}
+main h4 {
+    font-size: 30%;
+    text-align:left;
+    width: 40%;
+    margin: 10px auto;
+} 
+main p {
+    font-size: 1.5em;
+    width: 28%;
+    margin: 10px auto;
+    color: white;
+}
+h3 {
+    font-size: 20%;
+}
+footer p {
+    font-size: 20%;
+    width: 32%;
+    margin: 10px auto;
+}
