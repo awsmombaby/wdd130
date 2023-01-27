@@ -79,8 +79,13 @@ footer p {
 footer a {
     color: #02b1ae;
     text-decoration: none;
+    background-color:#f1f17c;
 }
 footer a:hover {
     color: #7f7f31;
+    background-color:#f1f17c;
+}
+footer p a:hover {
     text-decoration: underline;
 }
+
