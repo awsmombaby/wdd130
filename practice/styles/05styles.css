@@ -1,0 +1,23 @@
+body {
+    background: rgb(255, 255, 255);
+}
+.circles-img {
+    width: 625px;
+    display: block;
+    margin: auto;
+}
+#background-div {
+    height: 200px;
+    width: 625px;
+    background-color: gray;
+    display: block;
+    margin: auto;
+}
+.small-img {
+    padding: 0px;
+    width: 120px;
+    margin: 32px;
+    display: inline;
+    border-radius: 50%;
+    border: 10px solid darkslategrey;
+}
