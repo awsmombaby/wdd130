@@ -1,45 +1,81 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Zilla+Slab:wght@300&display=swap');
+
 body {
     background-color: white;
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color:#ffffc1;
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+}
+main section img {
+    box-sizing: border-box;
 }
 .logo {
     width: 80px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
+#logo_link {
+    padding-top: 5px;
+}
 nav a {
     color: #02b1ae;
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
-    color: #7f7f31;
-    background-color: #fffc6c;
+    color: white;
+    background-color: #9c9b41;
 }
 .book, .join {
     color: #00cecb;
-    background-color:#ffffc1;
+    background-color:#fffc6c;
     text-decoration: none;
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     color: white;
-    background-color:#fffc6c;
+    background-color:#9c9b41;
+}
+.rivers-card {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #466564;
 }
 .msg {
     background-color:#ffffc1;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #00cecb;
 }
 .msg p {
-    color: #00cecb;   
+    color: #00cecb;
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+    font-size: .8em;   
+    padding-bottom: 15px;
 }
 #hero-img {
     width: 100%;
@@ -49,6 +85,12 @@ nav a:hover {
 }
 .home-title {
     color: #00cecb;
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+h2 {
+    margin: 0;
 }
 h4 {
     color:#00cecb;
@@ -63,15 +105,20 @@ main section {
     text-align: center;
 }
 #background {
-    height: 725px;
+    height: 525px;
     background-color:#f1f17c;    
+    margin: 0;
 }
 .mountains {
-    width: 50%
+    width: 50%;
+    padding: 50px 0;
+    margin-bottom: 50px;
 }
 footer {
     color: #00cecb;
     background-color:#f1f17c;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     font-size: 1.2em;
@@ -88,4 +135,8 @@ footer a:hover {
 footer p a:hover {
     text-decoration: underline;
 }
+footer .scoial img {
+    padding-top: 15px;
+}
+
 
