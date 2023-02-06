@@ -53,11 +53,8 @@ nav a:hover {
     color: white;
     background-color:#9c9b41;
 }
-.rivers-card {
-    margin-top: 100px;
-    margin-bottom: 200px;
-}
-.camping-card, .rapids-card {
+
+.rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
 .card-img {
@@ -105,7 +102,7 @@ main section {
     text-align: center;
 }
 #background {
-    height: 525px;
+    height: 725px;
     background-color:#f1f17c;    
     margin: 0;
 }
