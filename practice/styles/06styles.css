@@ -1,0 +1,39 @@
+body {
+    width: 100%;
+}
+img {
+    width: 200px;
+}
+#image-gird {
+    display: grid;
+    grid-template-columns: 655px 686px;
+    grid-gap: 10px;
+}
+h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 200px;
+    z-index: 1;
+    text-align: center;
+    margin: 100px;
+}
+img {
+    width: 655px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#space {
+    width: 655px;
+    height: 686px;
+    background-color: gray;
+    display: block;
+    margin: auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+h3 {
+    text-align: center;
+    color: brown;
+    font-size: 8em;
+    margin: 450px 0;
+}
