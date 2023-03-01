@@ -201,7 +201,8 @@ main section img {
     margin-top: 10px;
 }
 .sky-button-box {
-    text-align: center;
+    text-align: right;
+    margin-right: 50px;
 }
 
 /*river page setting*/
@@ -354,6 +355,10 @@ footer .scoial img {
     .home-title, .sky-title {
         font-size: 25px;
         color: #6f7364;
+    }
+    .sky-button-box {
+        text-align: center;
+        margin-right: 0;
     }
     .rivers-card, .camping-card, .rapids-card, .people-card, .boats-card, .rafting-card { 
         margin: 50px auto;
