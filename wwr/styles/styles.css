@@ -214,14 +214,20 @@ main section img {
 .people-card {
     text-align: left;
     background-color: #fbfb8a;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .boats-card {
     text-align: left;
     background-color: #fbfb8a;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .rafting-card {
     text-align: left;
     background-color: #fbfb8a;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .people-img {
     float: left;
