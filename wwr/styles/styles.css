@@ -278,13 +278,11 @@ main section img {
     margin-top: 20px;
 }
 .rafting-end {
-    width: 100%;
+    width: 97%;
     grid-column: 1/2;
     grid-row: 4/5;
     margin-bottom: -150px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    justify-self: center;
 }
 .rafting-msg {
     grid-column: 1/2;
