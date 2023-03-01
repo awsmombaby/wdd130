@@ -54,20 +54,8 @@ nav a:hover {
     color: white;
     background-color: #9c9b41;
 }
-.book, .join {
-    color: #00cecb;
-    background-color:#fffc6c;
-    text-decoration: none;
-    font-family: "Zilla Slab", Helvetica, sans-serif;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-}
-.book:hover, .join:hover {
-    color: white;
-    background-color:#9c9b41;
-}
 
+/*index page setting*/
 /*div(between header and main) setting*/
 #hero {
     display: grid;
@@ -102,8 +90,21 @@ nav a:hover {
 .button-box {
     text-align: center;
 }
+.book, .join {
+    color: #00cecb;
+    background-color:#fffc6c;
+    text-decoration: none;
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book:hover, .join:hover {
+    color: white;
+    background-color:#9c9b41;
+}
 
-/*main setting*/
+/*index page setting*/
 main section {
     text-align: center;
 }
@@ -170,6 +171,132 @@ main section img {
     padding-bottom: 15px;
 }
 
+/*river page setting*/
+/*div setting*/
+#sky-grid { /*最外圍的框框*/
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#sky-box { /*跨欄格數,內文位置*/
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#sky-img { /*內文*/
+    width: 100%;
+    margin-bottom: 20px;
+}
+#sky-msg { /*跨欄格數,內文位置*/
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-top: 40px;
+}
+#sky-msg h1 { /*內文位置*/
+    text-align: center;
+}
+.sky-title { /*字型設定*/
+    color: #00cecb;
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.sky-button-box {
+    text-align: center;
+}
+
+/*river page setting*/
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+.people-card {
+    text-align: left;
+    background-color: #fbfb8a;
+}
+.boats-card {
+    text-align: left;
+    background-color: #fbfb8a;
+}
+.rafting-card {
+    text-align: left;
+    background-color: #fbfb8a;
+}
+.people-img {
+    float: left;
+    margin: 10px;
+    border: 10px solid #466564;
+    width: 300px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.people-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.people-card h1, h3 {
+    margin: 10px;
+    margin-top: 20px;
+}
+.boats-img {
+    float: left;
+    margin: 10px;
+    border: 10px solid #466564;
+    width: 300px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.boats-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.boats-card h1, h3 {
+    margin: 10px;
+    margin-top: 20px;
+}
+.rafting-img {
+    float: left;
+    margin: 10px;
+    border: 10px solid #466564;
+    width: 300px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.rafting-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.rafting-card h1, h3 {
+    margin: 10px;
+    margin-top: 20px;
+}
+/* #background {
+    height: 725px;
+    background-color:#f1f17c;    
+    margin: 0;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}*/
+.rafting-end {
+    width: 100%;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.rafting-msg {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-content: center;
+    height: 120px;
+}
+.rafting-msg h2 {
+    margin: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
 /*footer setting*/
 footer {
     color: #00cecb;
@@ -201,7 +328,7 @@ footer .scoial img {
 
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, #sky-grid, .content-grid {
         display: block;
         height: auto;
     }
@@ -212,30 +339,37 @@ footer .scoial img {
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero, #sky-grid {
         margin-top: 0;
     }
-    #hero-msg {
+    #sky-img {
+        margin: 0;
+    }
+    #hero-msg, #sky-msg {
         margin-top: 0;
     }
     #hero-msg h4 {
         display: none;
     }
-    .home-title {
+    .home-title, .sky-title {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .rivers-card, .camping-card, .rapids-card, .people-card, .boats-card, .rafting-card { 
         margin: 50px auto;
         width: 60%;
     }
     #background {
         display: none;
     }
-    .mountains, .msg {
+    .mountains, .msg, .rafting-end, .rafting-msg {
         width: 80%;
         display: block;
         margin: 0 auto;
+    }
+    .rafting-msg h2 {
+        color: #6f7364;
+        font-size: 25px;
     }
     footer {
         margin-top: 25px;
