@@ -129,6 +129,7 @@ body {
     align-self: center;
     grid-column: 1/5;
     grid-row: 3/4;
+    margin-left: 20px;
     margin-bottom: 30px;
 }
 .h3-3 {
@@ -177,7 +178,16 @@ body {
     grid-row: 4/6;
     background-color: #396E94;
     color: #78CAD2;
-    margin: 0 10px;
+    margin-left: 20px;
+    align-self: center;
+    width: 90%;
+    padding: 20px;
+}
+.main-img1 {
+    grid-column: 6/9;
+    grid-row: 4/6;
+    width: 90%;
+    margin: 10px;
 }
 .main-img2 {
     width: 90%;
@@ -195,6 +205,10 @@ body {
     background-color: #396E94;
     color: #78CAD2;
     margin-right: 10px;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    padding: 20px;
 }
 .main-p3 {
     font-size: 1.5em;
@@ -203,6 +217,10 @@ body {
     background-color: #396E94;
     color: #78CAD2;
     margin-right: 10px;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    padding: 20px;
 }
 .h3-4 {
     font-size: 1.75em;
@@ -210,6 +228,7 @@ body {
     grid-row: 8/9;
     text-align: right;
     color: #937D64;
+    margin: 30px;
 }
 .main-img3 {
     width:90%;
